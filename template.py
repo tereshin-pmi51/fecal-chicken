@@ -1,7 +1,8 @@
 import os
 from pathlib import Path
-import logging
+import logging, coloredlogs
 
+coloredlogs.install()
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 
 project_name = 'cnnClassifier'
